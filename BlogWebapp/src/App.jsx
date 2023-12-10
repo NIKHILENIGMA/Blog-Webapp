@@ -1,9 +1,10 @@
 import Header from "./components/Header/Header";
 
 function App() {
+  console.log(import.meta.env.VITE_APPWRITE_URL)
   return (
     <>
-      <Header />
+      <h2> Hello World</h2>
     </>
   );
 }

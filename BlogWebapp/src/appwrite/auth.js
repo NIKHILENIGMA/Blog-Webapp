@@ -1,4 +1,4 @@
-import conf from "../components/conf/conf";
+import conf from "../conf/conf";
 import { Client, Account, ID } from "appwrite";
 
 export class AuthServices {
@@ -9,7 +9,7 @@ export class AuthServices {
     this.client
       .setEndpoint(conf.appwriteUrl)
       .setProject(conf.appwriteProjectId);
-    this.account = new Account(client);
+    this.account = new Account(this.client);
   }
 
   async createAccount({ email, password, name }) {
@@ -53,12 +53,12 @@ export class AuthServices {
       return await this.account.get();
     } catch (error) {
       console.log(
-        `Appwrite service error :: auth :: getCurrentUser :: ${error}`
-      );
+        `Appwrite service error :: auth :: getCurrentUser :: ${error}`);
+        return null; //note if user does not exist
     }
   }
 }
 
-const authService = AuthServices;
+const authService = new AuthServices();
 
 export default authService;

@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <>
-      <div className=" bg-black w-full h-[40vh] text-white shadow-md flex">
-        <div className=" bg-red-400 w-[25%] h-full ">
-          <div className="bg-green-700 px-20 h-full">
+      <div className=" bg-gray-100 w-full h-[40vh] text-black shadow-md flex">
+        <div className="  w-[25%] h-full ">
+          <div className="bg-transparent px-20 h-full pt-5">
             <h1 className="uppercase py-5 text-start ">Company Name</h1>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -17,16 +17,33 @@ function Footer() {
             </p>
           </div>
         </div>
-        <div className="bg-blue-400 w-[25%] h-full">
-          <div className="bg-blue-800 px-20 h-full w-[80%] ml-10">
+        <div className="w-[25%] h-full">
+          <div className="bg-transparent px-20 h-full w-[80%] ml-10 pt-5">
             <h1 className="uppercase py-5 text-start ">PRODUCTS</h1>
-            <Link>
-
-            </Link>
+            <p className="mt-2">MDBootstrap</p>
+            <p className="mt-2">MDWordstrap</p>
+            <p className="mt-2">Brand Flow</p>
+            <p className="mt-2">Bootstrap Angular</p>
           </div>
         </div>
-        <div className="bg-green-400 w-[25%] h-full"></div>
-        <div className="bg-indigo-400 w-[25%] h-full"></div>
+        <div className=" w-[25%] h-full">
+          <div className="bg-transparent px-20 h-full w-[80%] ml-10 pt-5">
+            <h1 className="uppercase py-5 text-start ">contacts</h1>
+            <p className="mt-2">New York NY 10010, US</p>
+            <p className="mt-2">Info@gmai.com</p>
+            <p className="mt-2">+01 234 567 88</p>
+            <p className="mt-2">+01 234 567 89</p>
+          </div>
+        </div>
+        <div className="w-[25%] h-full">
+          <div className="bg-transparent px-20 h-full w-[80%] ml-10 pt-5">
+            <h1 className="uppercase py-5 text-start ">contacts</h1>
+            <p className="mt-2">New York NY 10010, US</p>
+            <p className="mt-2">Info@gmai.com</p>
+            <p className="mt-2">+01 234 567 88</p>
+            <p className="mt-2">+01 234 567 89</p>
+          </div>
+        </div>
       </div>
     </>
   );

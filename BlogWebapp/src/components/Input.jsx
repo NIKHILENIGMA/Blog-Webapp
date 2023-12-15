@@ -8,13 +8,13 @@ const Input = React.forwardRef(function Input(
   return (
     <div className="w-full">
       {label && (
-        <label className="block mb-1" htmlFor={id}>
+        <label className="block mb-2 ml-24" htmlFor={id}>
           {label}
         </label>
       )}
       <input
         type={type}
-        className={`py-2 px-2 ${className} `}
+        className={`py-2 px-8 w-1/2 border-violet-400 border-2 ml-24 ${className} `}
         ref={ref}
         {...props}
         id={id}
